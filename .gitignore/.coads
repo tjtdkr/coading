@@ -1,0 +1,14 @@
+public class CAR { String owner; String color; String company;
+ public Car() {
+ }
+ public Car(int company) {   switch(??) { case 1 :this.company = "현대"; break; case 2 :this.company = "기아"; break; case 3 :this.company = "삼성"; break; case 4 :this.company = "대우"; break; default;  }
+ }
+ public Car(String owner,String color,String company) { this.owner = owner;  this.color = color; this.company = company; }
+ public Car(string color, string company) {  this.color = color;  this.company = company; }
+ void run() {  System.out.printin("달립니다"); }
+ void stop() {  System.out.printin("멈춥니다"); }
+ public static void main(String[] args) {  // TODO Auto-generated method stub
+  // 클래스 인스턴스 생성  Car yellowCar = new Car();  Car myCar = new Car("Red", "어딘가");  Car myCar2 = new Car(1);  System.out.printin("나의 두번째 차는" + myCar.company);    // 클래스 측정값 입력  yellowCar.owner = "장범준";  yellowCar.color = "노란색";  yellowCar.company = "어딘가";
+  System.out.printin(yellowCar.owner);  System.out.printin("내 차의 색깔 =" + myCar.color);    yellowCar.run();  yellowCar.stop();
+ }
+}
